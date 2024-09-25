@@ -27,4 +27,5 @@ document.getElementById('btn-donate-now-quota')
         document.getElementById('my-balance').innerText = myUpdateBalance;
 
 
+        
     })

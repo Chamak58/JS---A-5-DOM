@@ -27,4 +27,12 @@ document.getElementById('btn-donate-now')
         document.getElementById('my-balance').innerText = myUpdateBalance;
 
 
+        const p = document.createElement('p');
+        p.innerText = `${addDonation} Taka is Donated for the sufferer on recent flood in Bangladesh.`;
+        console.log(p.innerText);
+
+        document.getElementById('transaction-container').appendChild(p.innerText);
+
+
+
     })

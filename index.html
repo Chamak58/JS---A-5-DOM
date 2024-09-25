@@ -52,14 +52,14 @@
 
             <!-- tabs section -->
             <div class="flex justify-center mt-20 navbar gap-x-8 w-screen py-0">
-                <button class="btn btn-outline btn-secondary bg-lime-400 text-lg font-bold">Donation</button>
-                <button class="btn btn-outline text-lg font-bold">History</button>
+                <button id="show-donation-form" class="btn btn-outline btn-secondary bg-lime-400 text-lg font-bold">Donation</button>
+                <button id="show-history-section" class="btn btn-outline text-lg font-bold">History</button>
             </div>
         </section>
 
         
 
-        <section class="w-10/12 mx-auto mt-20">
+        <section id="donation-section" class="w-10/12 mx-auto mt-20">
             <!-- cards section -->
 
             <!-- card-1 -->
@@ -143,6 +143,13 @@
             <div>
                 
         <section>
+            <section id="transaction-section" class="hidden">
+
+                <div id="transaction-container">
+
+                </div>
+
+            </section>
 
     </main>
 
@@ -152,6 +159,7 @@
     <script src="js/assist-quota.js"></script>
     <script src="js/utilities-quota.js"></script>
     <script src="js/assist-landfall.js"></script>
+    <script src="js/history.js"></script>
 </body>
 
 </html>
