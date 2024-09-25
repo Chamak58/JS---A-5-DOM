@@ -8,14 +8,27 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 
-
+<style>
+    .navbar{
+        
+        overflow: hidden;
+        background-color: #fffefdee;
+        padding: 25px 15px;
+        transition: 0.4s;
+        z-index: initial;
+        width: 100%;
+        height: 15%;
+        position: fixed;
+        top: 0;
+    }
+</style>
 </head>
 
-<body>
+<body class="">
     <main class="bg-zinc-100">
-        <section>
+        <section class="navbar p-0">
             <!-- navbar section -->
-            <div class="navbar sticky top-0 shadow-md bg-base-100 flex justify-between">
+            <div class="bg-base-100 flex justify-between bg-orange-200 navbar mt-0">
 
                 <!-- navbar left -->
                 <div>
@@ -36,22 +49,21 @@
                     <p class="sm:text-xl md:text-2xl pr-5 font-bold">BDT</p>
                 </div>
             </div>
-        </section>
 
-        <section>
             <!-- tabs section -->
-            <div class="flex justify-center gap-x-8 mt-12">
-                <button class="btn btn-outline btn-secondary bg-lime-400 text-lg font-bold ">Donation</button>
+            <div class="flex justify-center mt-20 navbar gap-x-8 w-screen py-0">
+                <button class="btn btn-outline btn-secondary bg-lime-400 text-lg font-bold">Donation</button>
                 <button class="btn btn-outline text-lg font-bold">History</button>
             </div>
         </section>
 
+        
 
-        <section class="max-w-5xl mx-auto ">
+        <section class="w-10/12 mx-auto mt-20">
             <!-- cards section -->
 
             <!-- card-1 -->
-             <div class="md:flex flex-col md:flex-row justify-between gap-x-10 mt-20 mb-20 bg-white p-5 rounded-2xl shadow-3xl">
+             <div class="md:flex flex-col md:flex-row justify-between gap-x-10 mb-20 bg-white px-5 pb-5 pt-28 rounded-2xl shadow-3xl">
                 
                 <div class="md:w-1/2">
                     <img class="rounded-2xl" src="assets/flood.png" alt="">
